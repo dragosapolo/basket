@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/holo_blue_light"
+        android:focusableInTouchMode="true"
         android:orientation="vertical"
         tools:context="com.example.android.basket.MainActivity">
 
@@ -30,9 +35,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Team A"
+                    android:text="@string/Team_A"
                     android:textAllCaps="true"
-                    android:textColor="#3D5AFE"
+                    android:textColor="@color/textTeam_color"
                     android:textSize="18sp" />
 
                 <TextView
@@ -43,7 +48,7 @@
                     android:fontFamily="sans-serif-light"
                     android:text="0"
                     android:textAllCaps="true"
-                    android:textColor="#283593"
+                    android:textColor="@color/textview_color"
                     android:textSize="38sp" />
 
                 <Button
@@ -51,11 +56,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
-                    android:background="#42A5F5"
+                    android:background="@color/background_color"
                     android:onClick="teamA1Point"
-                    android:text="+1 Point"
+                    android:text="@string/TeamA_1Point"
                     android:textAllCaps="true"
-                    android:textColor="#fff"
+                    android:textColor="@color/my_item_color"
                     android:textSize="14sp" />
 
                 <Button
@@ -63,13 +68,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="#42A5F5"
+                    android:background="@color/background_color"
                     android:onClick="teamA2Points"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:text="+2 Point"
+                    android:text="@string/TeamA_2Points"
                     android:textAllCaps="true"
-                    android:textColor="#fff"
+                    android:textColor="@color/my_item_color"
                     android:textSize="14sp" />
 
                 <Button
@@ -77,13 +82,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="#42A5F5"
+                    android:background="@color/background_color"
                     android:onClick="teamA3Points"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:text="+3 Point"
+                    android:text="@string/TeamA_3Points"
                     android:textAllCaps="true"
-                    android:textColor="#fff"
+                    android:textColor="@color/my_item_color"
                     android:textSize="14sp" />
 
                 <Button
@@ -91,14 +96,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="#42A5F5"
+                    android:background="@color/background_color"
                     android:onClick="team_a_fault"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:text="+1 Fault"
+                    android:text="@string/TeamA_fault"
                     android:textAllCaps="true"
-                    android:textColor="#fff"
-                    android:textSize="14sp"/>
+                    android:textColor="@color/my_item_color"
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/team_a_score_fault"
@@ -108,9 +113,8 @@
                     android:fontFamily="sans-serif-light"
                     android:text="0"
                     android:textAllCaps="true"
-                    android:textColor="#283593"
+                    android:textColor="@color/textview_color"
                     android:textSize="38sp" />
-
 
 
             </LinearLayout>
@@ -129,9 +133,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Team B"
+                    android:text="@string/Team_B"
                     android:textAllCaps="true"
-                    android:textColor="#3D5AFE"
+                    android:textColor="@color/textTeam_color"
                     android:textSize="18sp" />
 
                 <TextView
@@ -142,7 +146,7 @@
                     android:fontFamily="sans-serif-light"
                     android:text="0"
                     android:textAllCaps="true"
-                    android:textColor="#283593"
+                    android:textColor="@color/textview_color"
                     android:textSize="38sp" />
 
                 <Button
@@ -150,11 +154,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
-                    android:background="#42A5F5"
+                    android:background="@color/background_color"
                     android:onClick="teamB1Point"
-                    android:text="+1 Point"
+                    android:text="@string/TeamB_1Point"
                     android:textAllCaps="true"
-                    android:textColor="#fff"
+                    android:textColor="@color/my_item_color"
                     android:textSize="14sp" />
 
                 <Button
@@ -162,13 +166,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="#42A5F5"
+                    android:background="@color/background_color"
                     android:onClick="teamB2Points"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:text="+2 Point"
+                    android:text="@string/TeamB_2Points"
                     android:textAllCaps="true"
-                    android:textColor="#fff"
+                    android:textColor="@color/my_item_color"
                     android:textSize="14sp" />
 
                 <Button
@@ -176,13 +180,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="#42A5F5"
+                    android:background="@color/background_color"
                     android:onClick="teamB3Points"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:text="+3 Point"
+                    android:text="@string/TeamB_3Points"
                     android:textAllCaps="true"
-                    android:textColor="#fff"
+                    android:textColor="@color/my_item_color"
                     android:textSize="14sp" />
 
 
@@ -191,14 +195,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="#42A5F5"
+                    android:background="@color/background_color"
                     android:onClick="team_b_fault"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:text="+1 Fault"
+                    android:text="@string/TeamB_fault"
                     android:textAllCaps="true"
-                    android:textColor="#fff"
-                    android:textSize="14sp"/>
+                    android:textColor="@color/my_item_color"
+                    android:textSize="14sp" />
 
 
                 <TextView
@@ -209,9 +213,8 @@
                     android:fontFamily="sans-serif-light"
                     android:text="0"
                     android:textAllCaps="true"
-                    android:textColor="#283593"
+                    android:textColor="@color/textview_color"
                     android:textSize="38sp" />
-
 
 
             </LinearLayout>
@@ -220,8 +223,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:gravity="center"
             android:layout_gravity="center"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <Button
@@ -233,7 +236,7 @@
                 android:onClick="reset_points"
                 android:paddingLeft="30dp"
                 android:paddingRight="30dp"
-                android:text="Reset points"
+                android:text="@string/reset_point"
                 android:textSize="14sp" />
 
             <Button
@@ -244,16 +247,10 @@
                 android:onClick="reset_faults"
                 android:paddingLeft="30dp"
                 android:paddingRight="30dp"
-                android:text="Reset faults"
+                android:text="@string/reset_fault"
                 android:textSize="14sp" />
 
-
         </LinearLayout>
-
     </LinearLayout>
 
-
-
-
-
-
+</ScrollView>
